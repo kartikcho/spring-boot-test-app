@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <script defer src="./scripts/script.js"></script>
+    <title>Add Profile</title>
+  </head>
+  <body>
+    <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-active"> Profile </a>
+          <a class="navbar-item" href="./UserInfo.html"> User Info </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Create Profile</h1>
+        <form action="" id="user-details-form">
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Add Name"
+                id="name"
+                required
+              />
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <label class="label">Age</label>
+                <div class="control">
+                  <input
+                    class="input"
+                    type="number"
+                    placeholder=""
+                    id="age"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <label class="label">Phone no.</label>
+                <div class="control">
+                  <input
+                    class="input"
+                    type="number"
+                    placeholder="9999999999"
+                    id="phone"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input
+                class="input"
+                type="email"
+                placeholder="example@example.com"
+                id="email"
+                required
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Address</label>
+            <div class="control">
+              <textarea
+                class="textarea"
+                placeholder="Add address"
+                id="address"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <button class="button is-danger">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-danger is-light">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
