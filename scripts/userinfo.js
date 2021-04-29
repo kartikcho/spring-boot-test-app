@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://backend-et-upgrad.herokuapp.com/";
+const API_BASE_URL = "https://sbkc.herokuapp.com/";
 
 const mainContainer = document.getElementById("main-container");
 
